@@ -4,31 +4,37 @@
   padding: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
-  background-color: #E6F5FF;
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: "Orbitron";
+  background-color: rgb(0, 36, 61);
+  color: whitesmoke;
+  line-height: 2rem;
 }
 
 header {
-  border: solid black 0.5rem;
-  width: 100%;
   height: 6rem;
 }
-
-.nav__items {
-  background-color: #ACD0E6;
+header .nav__menu {
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+header .nav__menu .nav__menu__items {
+  background-color: #00375A;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
-
-a {
-  background-color: whitesmoke;
+header .nav__menu .nav__menu__items a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -37,22 +43,54 @@ a {
   height: 6rem;
   cursor: pointer;
 }
-
-.nav__items__icon {
-  width: 2rem;
+header .nav__menu .nav__menu__items a .nav__items__icon {
+  width: 3rem;
+  filter: invert(48%) sepia(13%) saturate(3207%) brightness(120%) contrast(90%);
+}
+header .nav__menu .nav__menu__items a:link {
+  color: white;
+  text-decoration: none;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+header .nav__menu .nav__menu__items a:hover {
+  color: orange;
+  filter: sepia(50%);
 }
 
-.main__content {
-  font-family: "Orbitron";
+main {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 1rem;
-  height: 500px;
   width: 100%;
-  border: solid black;
+  height: 100%;
+}
+main .main__content {
+  grid-column: 2/4;
+  grid-row: 1/span 2;
+  background-color: rgba(215, 215, 215, 0.695);
+  background-image: url("/portfolio/img/city-nighttime.jpg"), linear-gradient(to right, red, blue, orange, green);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  padding: 2rem;
+  border: solid 0.5rem whitesmoke;
+}
+main .main__content .main__content__introduction {
+  -webkit-text-stroke: 0.5px black;
+  width: 15rem;
 }
 
-h1 {
-  grid-column: 2/4;
+footer {
+  grid-row: 3/4;
+  grid-column: 1/5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.copyright {
+  margin-right: 2rem;
 }/*# sourceMappingURL=portfolio.css.map */
