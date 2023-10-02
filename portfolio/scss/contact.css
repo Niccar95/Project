@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
+body {
+  font-family: "Orbitron";
+  background-color: #00243D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  border: solid 0.4rem;
+  border-color: whitesmoke;
+  background-color: #00375A;
+  color: whitesmoke;
+}
+.contact-form legend {
+  width: 8rem;
+  color: whitesmoke;
+  border: white solid 0.4rem;
+  padding: 1rem;
+  background-color: #00243D;
+}/*# sourceMappingURL=contact.css.map */

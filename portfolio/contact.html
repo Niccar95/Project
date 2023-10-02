@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="/portfolio/scss/contact.css">
+
+</head>
+<body>
+  <main>
+    <form action="https://httpbin.org/post" method="post">
+      <fieldset class="contact-form">
+        <legend>
+          Contact Me:
+        </legend>
+        
+      <br>
+      <label for="firstName">First Name:</label>
+      <br>
+      <input
+        type="text"
+        name="firstName"
+        id="firstName"
+        autocomplete="on"
+        required
+        >
+        <br>
+        <label for="secondName">Second Name:</label>
+    <br>
+      <input
+        type="text"
+        name="secondName"
+        id="secondName"
+        autocomplete="on"
+        required
+        >
+    <br>
+        <label for="emailAdress">Email Adress:</label>
+    <br>
+        <input 
+         type="email"
+         name="emailAdress"
+         id="emailAdress"
+         autocomplete="on"
+         required
+         >
+        <br>
+        <label for="message">Write your Message:</label>
+        <br>
+        <textarea name="message" rows="10" cols="30" required></textarea>
+    <br>
+      <button type="submit">Submit</button>
+    <br>
+    </fieldset> 
+  </form>   
+
+  </main>
+</body>
+</html>

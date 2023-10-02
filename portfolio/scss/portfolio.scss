@@ -9,15 +9,13 @@ html {
   font-size: 16px; 
 }
 
-
-
 body {
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: 'Orbitron';
-  background-color: rgb(0, 36, 61);
+  background-color: #00243D;
   color: whitesmoke;
   line-height: 2rem;
 }
@@ -25,12 +23,12 @@ body {
 header {
 height: 6rem;
 
-  .nav__menu {
+  .nav-menu {
     top:0;
     width: 100%;
     position: fixed;
 
-    .nav__menu__items {
+    .nav-menu__items {
       background-color: #00375A;
       display: flex;
       flex-direction: row;
@@ -46,7 +44,7 @@ height: 6rem;
       height:6rem;
       cursor: pointer;
     
-      .nav__items__icon {
+      .nav-menu__icon {
         width: 3rem;
         filter: invert(48%) sepia(13%) saturate(3207%) brightness(120%) contrast(90%);
       }
@@ -56,6 +54,10 @@ height: 6rem;
       color: white;
       text-decoration: none;
       text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    a:visited {
+      color: red;
     }
 
     a:hover {
@@ -94,19 +96,54 @@ main {
     width: 15rem;
   } 
 }
+
+.box {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #00375A;
+
+
+  .box__links-nav {
+    display: flex;
+    align-items: center;
+
+    .box__link:link {
+      text-decoration: none;
+      
+      .box__social-icons {
+        margin: 1rem;
+        width: 2rem;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+      }
+    }
+  }
+} 
 }
+
 
 footer {
   grid-row: 3 / 4;
   grid-column: 1 / 5;
-  display: flex; 
-  align-items: flex-end;
+  display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
+ 
+ 
+  .copyright {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
 }
 
-.copyright {
-  margin-right: 2rem;
-}
 
 
 
