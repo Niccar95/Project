@@ -21,10 +21,37 @@ body {
   color: whitesmoke;
 
   legend {
+    font-weight: bold;
     width: 8rem;
-    color: whitesmoke;
+    color: #FFBA3B;
     border: white solid 0.5rem;
     padding: 1rem;
     background-color: #00243D; 
   }
+
+  #form__submit-button {
+    font-family: 'Orbitron';
+    background-color: #00375A;
+    color: #FFBA3B;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: solid 0.5rem whitesmoke; 
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    cursor: pointer;
+  }
+
+  #form__submit-button:hover {
+    background-color: #FFBA3B;
+    color:  #00375A;
+    border-style:double;
+  }
+
+  #form__submit-button:active {
+    opacity: 0.5;
+    background-color: #FFBA3B;
+    color:  #00375A;
+    border-style:double;
+  }
+
+
 }
